@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  font-family: "Amatic SC", cursive;
+}
+
+header {
+  flex-grow: 2;
+  width: 300px;
+  height: 100vh;
+  padding: 2em;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+#buttons {
+  display: flex;
+  margin: 5em 0;
+  justify-content: space-between;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+#new-quote {
+  border: none;
+  border-radius: 7px;
+  color: #000;
+  background-color: #fff;
+  outline: none;
+  padding: 1em 3em;
+  cursor: pointer;
+  font-family: "Amatic SC", cursive;
+  font-size: 1em;
+  font-weight: 900;
+}
+
+#new-quote:hover {
+  background-color: rgb(179, 179, 179);
+}
+
+.fab {
+  color: #fff;
+}
+
+#quote-box {
+  display: flex;
+  flex-grow: 4;
+  justify-items: center;
+  align-items: center;
+}
+
+#quote-box section {
+  justify-items: center;
+  align-items: center;
+}
+
+#text {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  padding: 0 5em;
+  font-size: 2em;
+}
+
+#author {
+  position: relative;
+  float: right;
+  font-size: 1.5em;
+}
+
+@media only screen and (max-width: 800px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  #new-quote {
+    padding: 1em 2em;
+    cursor: pointer;
+    font-family: "Amatic SC", cursive;
+    font-size: 1em;
+    font-weight: 900;
+  }
+
+  .fab {
+    color: #fff;
+  }
+}
